@@ -1,0 +1,39 @@
+[package]
+name = 'AptosPad'
+version = '1.0.0'
+upgrade_policy = "compatible"
+
+[addresses]
+aptospad = "e33a81af433f27d9a6afa7b2036dd1550dd9b86d67b37d2580bfbb084c5ae9ea"
+aptospad_admin = "e33a81af433f27d9a6afa7b2036dd1550dd9b86d67b37d2580bfbb084c5ae9ea"
+aptospad_resource = "1c07732f8f9bed7ee795519629ce8c334d08348fccadbb473d859464042a3ba7"
+dao_admin = "e33a81af433f27d9a6afa7b2036dd1550dd9b86d67b37d2580bfbb084c5ae9ea"
+
+# Admins
+test_aptospad_admin = "0x63e39817ec41fad2e8d0713cc906a5f792e4cd2cf704f8b5fab6b2961281fa11"
+test_dao_admin = "0x63e39817ec41fad2e8d0713cc906a5f792e4cd2cf704f8b5fab6b2961281fa11"
+test_wl1 = "0x100000"
+test_wl2 = "0x100001"
+test_wl3 = "0x100002"
+
+[dependencies.AptosPadCoin]
+local = "./aptospadcoin/"
+
+[dependencies.AptosPadCoinBoot]
+local = "./aptospadcoinboot/"
+
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "a2a3bf79b68823287f962bded2abfaefc688e71c"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-dependencies.MoveStdlib]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "a2a3bf79b68823287f962bded2abfaefc688e71c"
+subdir = "aptos-move/framework/move-stdlib"
+
+[dev-dependencies.AptosStdlib]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "a2a3bf79b68823287f962bded2abfaefc688e71c"
+subdir = "aptos-move/framework/aptos-stdlib"

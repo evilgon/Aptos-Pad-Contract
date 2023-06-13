@@ -2,3 +2,5 @@ build/
 storage/
 .idea/
 .aptos/
+*/**node_modules
+*/**dist
